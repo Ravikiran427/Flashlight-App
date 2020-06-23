@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/background"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/titleBar"
+    android:text="Flashlight App"
+    android:textStyle="bold"
+    android:textSize="28sp"
+    android:layout_margin="10sp"
+    />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="75sp"
+    >
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="20sp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="100sp"
+      android:background="@drawable/inputboxbg"
+      >
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Delay time : "
+          android:textSize="20sp"
+          />
+
+        <EditText
+          android:layout_width="175sp"
+          android:layout_height="wrap_content"
+          android:id="@+id/delayTime"
+          android:textSize="25sp"
+          android:inputType="number"
+          android:letterSpacing="1"
+          android:maxLength="4"
+          android:backgroundTint="@null"
+          />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="ms"
+          />
+
+      </LinearLayout>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*set 0 for no flashing"
+        android:textSize="10sp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_gravity="center"
+      >
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:background="@drawable/startbg"
+        android:paddingVertical="15sp"
+        android:text="s\nt\na\nr\nt"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="15sp"
+        />
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopButton"
+        android:background="@drawable/stopbg"
+        android:paddingVertical="15sp"
+        android:text="s\nt\no\np"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
